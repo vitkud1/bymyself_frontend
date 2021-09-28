@@ -1,7 +1,14 @@
-import { createStore } from 'vuex'
+import Vue from 'vue'
+import Vuex from 'vuex'
 
-export default createStore({
+Vue.use(Vuex)
+
+export default new Vuex.Store({
   state: {
+  },
+  getters: {
+    host: () => 'http://5.141.22.92:3041/api',
+
   },
   mutations: {
   },
